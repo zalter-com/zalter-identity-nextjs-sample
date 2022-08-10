@@ -9,7 +9,7 @@ export const Footer: FC = () => (
       </div>
       <a
         className="btn btn-neutral"
-        href="https://github.com/zalter-com/identity-nextjs-sample"
+        href="https://github.com/zalter-com/zalter-identity-nextjs-sample"
         target="_blank"
       >
         View on Github
