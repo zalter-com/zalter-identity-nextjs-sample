@@ -18,9 +18,10 @@ const Page: NextPage = () => {
     processed.current = true;
 
     // Get the token from the page URL hash (without #)
-    const token = window.location.hash.substring(1);
+    const hash = window.location.hash.substring(1);
+    const token = hash.split('=')[1];
 
-    if (!token) {
+    if (!hash) {
       Router.push('/').catch(console.error);
       return;
     }

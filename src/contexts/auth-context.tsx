@@ -69,13 +69,13 @@ export const AuthProvider = (props: AuthProviderProps) => {
   const initialize = () => {
     auth
       .getCurrentUser()
-      .then((user) => {
+      .then((user: any) => {
         dispatch({
           type: ActionType.INITIALIZED,
           payload: !!user
         });
       })
-      .catch((err) => {
+      .catch((err: any) => {
         console.error(err);
         dispatch({
           type: ActionType.INITIALIZED,
